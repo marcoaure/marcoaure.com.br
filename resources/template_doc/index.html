@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title here -->
+    <title>Nairo Template Documentation</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your,Keywords">
+    <meta name="author" content="ResponsiveWebInc">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+	<div class="container">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-2">
+                	<div class="sidebar">
+                        <!-- Project name -->
+                        <h3>Nairo</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#files">File Structure</a></li>
+                            <li><a href="#editing">Editing</a></li>
+                            <li><a href="#fonts">Fonts & Icons</a></li>
+                            <li><a href="#add-page">Add New Section</a></li>
+                            <li><a href="#Contact">Contact Form</a></li>
+                            <li><a href="#plugins">Credits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-10">
+                	<div class="mainbar">
+                		<!-- Home -->
+                        <h3 id="home">Documentation Overview</h3>
+                        <p>To edit Nairo Template, basic knowledge about HTML, CSS, JS & Bootstrap is required. You can learn HTML, CSS and JS from <a href="http://www.w3schools.com/">W3Schools</a>. You can learn Bootstrap by visiting <a href="http://getbootstrap.com/">official site</a>.</p>
+                        <p>All components used in the Template are well commented. If you like to use any component then open the HTML file and refer the code.</p>
+                        <div class="alert alert-danger"><strong>Note:</strong> Before you make any changes, take a backup of all files and folders.</div>
+                        <hr />
+
+                        <!-- File structure -->
+                        <h3 id="files">File Structure</h3>
+                        <figure class="highlight">
+                        	<pre>
+<code class="language-bash" data-lang="bash">
+	Nairo/static
+	|-- css/
+	|   |-- All css in this folder
+        |-- scss/
+        |   |-- All scss in this folder
+	|-- img
+	|   |-- All Images in this folder
+	|-- js/
+	|   |-- All js in this folder
+	|-- plugin/
+	|   |-- All 3rd party plugin in this folder
+----------------------------------
+
+</code>
+</pre>
+</figure>
+<p>
+    1. Open the <em>Nairo</em> Folder to find all the Template Files<br/>
+    2. You will need to Upload these files to your Web Server using FTP in order to use it on your Website<br/>
+    3. Make sure you upload the required files/folders listed below:<br/>
+        <em>index.html</em> - Index File/Homepage<br/>
+        <em>static/css</em> - Stylesheets Folder<br/>
+        <em>static/img</em> - Images Folder<br/>
+        <em>static/js</em> - Javacripts Folder<br/>
+        <em>static/plugin</em> - Plugin Folder<br/>
+        <em>static/scss</em> - scss Folder(optional) <br/>
+    4. You're now good to go..! Start adding your Content and show off your Beautiful Website in style.
+</p>
+                        <hr />
+                        <!-- Editing -->
+                        <h3 id="editing">Editing</h3>
+
+                        <p>To edit files you need any code editor. I recommend using Notepad++ and Sublime Text.</p>
+
+                        <strong>Add Custom Styles</strong>
+                        <p>To add custom styles, create new style sheet in <em>css</em> folder. Include the style file before the closing tag of <code>&lt;head&gt;</code>. Make sure that you are including this new file after <em>style.css</em></p>
+                        <p>If you want to add any extra CSS files, copy the file to <em>css</em> folder and link it before <em>style.css</em>.</p>
+
+                        <pre>
+&lt;link href=&quot;static/style/FILE-NAME.css&quot; rel=&quot;stylesheet&quot;&gt;									
+								</pre>
+
+                        <hr />
+
+                        <strong>Add Custom JavaScript</strong>
+                        <p>To add JS, just create a new java script file in <em>js</em> folder. Include the newly created js file before the closing tag of <code>&lt;body&gt;</code>. Make sure that you are including this new file after <em>custom.js</em>. Alternatively you can also include Javascript code directly to the html file by enclosing the code in <code>&lt;script&gt; ...your code... &lt;/script&gt;</code> and adding this above the closing tag of <code>&lt;body&gt;</code></p>
+                        <p>If you want to add any extra JS files, copy the file to <em>js</em> folder and link it after <em>custom.js</em>.</p>
+
+                        <pre>
+&lt;script src=&quot;js/FILE-NAME.js&quot;&gt;&lt;/script&gt;								
+								</pre>
+
+                        <hr />
+
+                        <strong>Editing HTML</strong>
+                        <p>Almost all html codes in this Template are neatly commented. All you need to do is to read the comment and modify the content based on your need.</p>
+
+                        <hr />
+
+
+                        <!----------------------------------------------------------------------------------------------------------->
+
+
+                        <!-- Fonts -->
+                        <h3 id="fonts">Fonts Icons</h3>
+
+                        <p>This Template uses <a href="https://fontawesome.com/">Font Awesome Icons</a> and <a href="https://themify.me/themify-icons">Themify Icons</a> for Icons and <a href="http://www.google.com/fonts">Google Web Fonts</a> for Fonts.</p>
+
+                        <!-- Icon font -->
+                        <strong>Icon Font</strong>
+                        <p>Refer <a href="https://fontawesome.com/">Font Awesome Icons</a> and <a href="https://themify.me/themify-icons">Themify Icons</a> for list of fonts. To use any fonts in the Template, you need to use the following code.</p>
+
+                        <pre>
+&lt;i class=&quot;class-name&quot;&gt;&lt;/i&gt;
+								</pre>
+
+
+                        <h3 id="fonts">Changing Color Skin</h3>
+                        <p>You can change easily color with SCSS variable.</p>
+                        <p>You can set your primary and secondary color in <em>variable.scss</em> file <em>(\static\style\scss)</em></p>
+                        <p>For <em>Light Theme</em> you need to add <em>theme-light</em> class on body tag </p>
+                        <pre>
+$px-theme:            #008aff !default;
+                        </pre>
+                        <p>you can use <a target="_blank" href="http://koala-app.com/">Koala</a> software for scss compile</p>
+                        <!-- Web Font -->
+                        <hr />
+
+
+
+                        <!----------------------------------------------------------------------------------------------------------->
+
+
+
+                        <!-- XXXXXXXXXXXXXXXXXXXX -->
+                        <!-- If the Template is single page Template, then remove this. -->
+                        <h3 id="add-page">Add New Section and Navigation</h3>
+
+                        <p>You wnat to create new section or page you need to follow below points</p>
+                        <strong>For Sections</strong>
+                        <ul>
+                            <li>
+                                1. Add Link in main navigations
+                                <pre>&lt;li&gt;&lt;a href="#Your_Section_Name"&gt;Your Section Name&lt;/a&gt;&lt;/li&gt;</pre>
+                            </li>
+                            <li>
+                                2. Create your section
+                                <pre>&lt;section id="Your_Section_Name"&gt;&lt;div class="container"&gt;Your content here&lt;/div&gt;&lt;/section&gt;</pre>
+                            </li>
+                        </ul>
+                        <strong>For Page</strong>
+                        	<li>
+                                This Template has very simple navigation menu. You just need to add unordered list with navigation links for navigation menu. Noting complex. like this
+                                <pre>&lt;li&gt;&lt;a href="/pagename.html"&gt;Page Name&lt;/a&gt;&lt;/li&gt;</pre>
+                            </li>
+                        <hr />
+
+                        <!----------------------------------------------------------------------------------------------------------->
+
+                        <h3 id="Contact">Contact Form</h3>
+<p>In order to receive emails in your inbox, open <em>process_form.php</em> and go to Line 9 : and replace <em>youremail@mail.com</em> with your email, that's all !</p>
+                        <!-- Plugins used -->
+                        <h3 id="plugins">Credits</h3>
+
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>Font awesome</li>
+                            <li>Owl Carousel</li>
+                            <li>magnific</li>
+                            <li>freepik</li>
+
+                        </ul>
+
+                        <p>To customize the plugins, you need to refer the official Plugin documentation.</p>
+
+
+                        <!----------------------------------------------------------------------------------------------------------->
+
+
+                        <!-- Changelog 
+							<h3 id="changelog">Changelog</h3>
+							
+								<strong>Version 1.0:</strong>
+								<ul>
+									<li>Initial Release.</li>
+								</ul>
+							-->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="footer text-center">
+            Copyright 2020 - Nairo</a>
+        </div>
+    </div>
+
+
+    <!-- Javascript files -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Respond JS for IE8 -->
+    <script src="js/respond.min.js"></script>
+    <!-- HTML5 Support for IE -->
+    <script src="js/html5shiv.js"></script>
+</body>
+
+</html>
