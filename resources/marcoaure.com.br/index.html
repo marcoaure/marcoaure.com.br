@@ -497,14 +497,14 @@
             <div class="col-lg-7 ml-auto m-15px-tb">
               <div class="contact-form">
                 <h4>Say Something</h4>
-                <form id="contact-form" method="POST">
+                <form id="contact-form" method="POST" action="https://getform.io/f/76864049-1824-475b-b0d1-b2c58efcf7e6">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <input
-                          name="Name"
+                          name="name"
                           id="name"
-                          placeholder="Name *"
+                          placeholder="Nome *"
                           class="form-control"
                           type="text"
                         />
@@ -513,22 +513,11 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <input
-                          name="Email"
+                          name="email"
                           id="email"
                           placeholder="Email *"
                           class="form-control"
                           type="email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <input
-                          name="Subject"
-                          id="subject"
-                          placeholder="Subject *"
-                          class="form-control"
-                          type="text"
                         />
                       </div>
                     </div>
@@ -537,7 +526,7 @@
                         <textarea
                           name="message"
                           id="message"
-                          placeholder="Your message *"
+                          placeholder="Sua mensagem *"
                           rows="5"
                           class="form-control"
                         ></textarea>
@@ -547,8 +536,7 @@
                       <div class="send">
                         <button
                           class="px-btn px-btn-white"
-                          onclick="send_mail()"
-                          type="button"
+                          type="submit"
                           value="Send"
                         >
                           send message
